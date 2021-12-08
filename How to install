@@ -1,0 +1,10 @@
+npm init -y
+npm install --save-dev cypress
+npx cypress open -> This will not open in vs code terminal
+SOLUTION = Open Windows PowerShell with Run as Administrator then run with below command.
+
+Set-ExecutionPolicy RemoteSigned
+
+ALL
+
+npx cypress open
