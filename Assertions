@@ -1,0 +1,35 @@
+validation whether test case work or not
+
+
+1. impilicit - parent , find same element in 1 parents
+- should,and
+
+cy.get('#loginButton')
+  .should('have.class', 'active')
+  .and('have.attr', 'href', '/login')
+  
+  
+2. explicit-  to pass an explicit subject
+-expect , assert
+
+expect(true).to.be.true
+// The the explicit subject the boolean: true
+
+const employee = 
+{ name: 'Lakshay', age: 34, }
+
+assert.isObject(employee, 'value is object')
+
+
+3.common assertion
+
++length - // Number of articles tiles should be 10
+cy.get('.demo-frame > ul > li').should('have.length',19);
++class
++value
++text- .should('contain', 'ToolsQA'
++visibility - .should('be.visible')
++existence - .should('not.exist')
++state- checkbox 
+.should('be.checked')
++css - higlight or not
