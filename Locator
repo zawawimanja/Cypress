@@ -1,0 +1,10 @@
+Open Selector Playground- find this locater automate 
+
+-Cypress does support Xpath selectors as well. However, that does not come by default.  we need 'Cypress-Xpath' external plugins to assist this selector.
+-support CSS only
++ id-> For Example, input#userid where "userid" is the id of the tag input.
++class->input.login where login is the class name of the tag input.
++attribute -> , input[name=username] where "username" is the value of attribute "name" , input[class=login], where, "login" is the value of the attribute "class"
+
++sub-string
++inner text
