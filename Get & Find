@@ -9,7 +9,7 @@
 </ul>
 
 eq for having same selector.
-
+//chain other command with get
 cy.get('input').eq(1).should('contain', 'Cucumber')
 
 2. within - to search a web element inside a parent web element. 
@@ -17,3 +17,13 @@ cy.get('input').eq(1).should('contain', 'Cucumber')
 cy.get('#searchBox').within(() => {
   cy.get('input').type('Cucumber') // Only searches inputs within searchBox
 })
+
+
+3. find
+
+<ul id="parent">
+  <li class="child"></li>
+  <li class="child"></li>
+</ul>
+
+cy.get('#parent').find('li')
