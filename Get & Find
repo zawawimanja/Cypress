@@ -1,0 +1,19 @@
+1. cy.get(selector)
+
+<ul>
+  <input>Cypress</input>
+  <input>Cucumber</input>
+  <input>Gherkin</input>
+  <input>JBehave</input>
+  <input>BDD</input>
+</ul>
+
+eq for having same selector.
+
+cy.get('input').eq(1).should('contain', 'Cucumber')
+
+2. within - to search a web element inside a parent web element. 
+
+cy.get('#searchBox').within(() => {
+  cy.get('input').type('Cucumber') // Only searches inputs within searchBox
+})
