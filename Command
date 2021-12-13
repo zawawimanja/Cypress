@@ -1,3 +1,4 @@
 npm init -y
 npm install --save-dev cypress
 npx cypress open
+npx serve = for local server
