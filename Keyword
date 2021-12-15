@@ -4,3 +4,5 @@ find
 type
 within
 eq
+describe
+it
