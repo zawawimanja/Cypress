@@ -1,0 +1,41 @@
+
+
+
+
+ describe('My First Test', () => {
+  
+  //for the first test
+    it('Does not do much!', () => {
+      cy.visit('http://google.com');
+	  
+	  //find the tag for the input
+	  cy.get('h1')
+			.invoke('text')
+			.should('equal','Text')
+			//equal 15 character
+			.should('equal','15');
+			
+			//input : hello
+			cy.get('input').type('hello');
+	  
+	 
+      expect(true).to.equal(false)
+	  
+	  
+	  //second test 
+    it('Does not do much!', () => {
+	     cy.visit('http://google.com');
+		 
+	  	cy.get('input').type('abcdefghijklmnopqrstuvwxyz');
+		cy.get('input').should('have.attr','value','abcdefghijklmnop')
+			
+	
+	//selecting attribute element
+	//data-cy is the attribute tag html
+	cy.get('[data-cy="last-name"]')
+	
+	  
+    })
+  })
+
+  
