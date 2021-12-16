@@ -11,6 +11,7 @@ Open Selector Playground- find this locater automate
 
 
 //text area is the html tag <textarea>
-    //if use id = textarea#message
+//if use the tag cy.get('texarea')
+    //if use id  cy.get('textarea#message')
     //if use attribute cy.get('textarea[name="message"]')
    // if use class cy.get('textarea.message')
